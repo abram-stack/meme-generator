@@ -1,3 +1,47 @@
 body {
   margin: 0;
+  font-family: 'Chivo Mono', monospace;
+}
+main{
+  padding: 36px;
+}
+nav{
+  display: flex;
+  background: whitesmoke;
+  color: darkgray;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo--image{
+  width: 75px;
+  height: 75px;
+}
+.logo--title{
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.form{
+  display: grid;
+  grid-template: 40px 40px/1fr 1fr;
+  gap: 17px;
+}
+
+.form--input{
+  font-family: 'Chivo Mono', monospace;
+  border: 1px solid #D5D4D8;
+  border-radius: 10px;
+  text-indent: 5px;
+}
+
+.form--button{
+  font-family: 'Chivo Mono', monospace;
+  grid-column: 1/ -1;
+  cursor: pointer;
 }

@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import Header from '../components/Header';
+import Meme from '../components/Meme';
 
 function App() {
   return (
-    <div className='App'>
-      <h1>test</h1>
+    <div>
+      <Header />
+      <Meme />
     </div>
   );
 }
