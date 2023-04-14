@@ -31,6 +31,7 @@ nav{
   display: grid;
   grid-template: 40px 40px/1fr 1fr;
   gap: 17px;
+  margin-bottom: 20px;
 }
 
 .form--input{
@@ -44,4 +45,41 @@ nav{
   font-family: 'Chivo Mono', monospace;
   grid-column: 1/ -1;
   cursor: pointer;
+}
+.meme{
+  border: 1px solid red;
+  position:relative;
+}
+.meme--image{
+  max-width: 100%;
+}
+.meme--text{
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  margin: 15px 0;
+  transform: translateX(-50%);
+  left: 50%;
+  font-family: Impact, 'Arial Narrow Bold', sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  text-shadow:
+      2px 2px 0 #000,
+      -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000,
+      0 2px 0 #000,
+      2px 0 0 #000,
+      0 -2px 0 #000,
+      -2px 0 0 #000,
+      2px 2px 5px #000;
+}
+.top{
+  top: 0;
+}
+
+.bottom{
+  bottom: 0;
 }
