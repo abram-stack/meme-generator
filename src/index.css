@@ -46,8 +46,10 @@ nav{
   grid-column: 1/ -1;
   cursor: pointer;
 }
+.clear--button{
+  padding: 10px;
+}
 .meme{
-  border: 1px solid red;
   position:relative;
 }
 .meme--image{

@@ -36,7 +36,14 @@ export default function Meme() {
       [name]: value,
     }));
   }
-
+  function clearText() {
+    setMeme((prevMeme) => ({
+      ...prevMeme,
+      topText: '',
+      bottomText: '',
+    }));
+  }
+  console.log(meme);
   return (
     <main>
       <div className='form'>
@@ -58,6 +65,9 @@ export default function Meme() {
         />
         <button className='form--button' onClick={getMemeImage}>
           Generate meme image
+        </button>
+        <button className='form--button clear--button' onClick={clearText}>
+          Clear Text
         </button>
       </div>
       <div className='meme'>
